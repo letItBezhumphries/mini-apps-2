@@ -1,0 +1,129 @@
+.gameboard-menu {
+  background-color: grey;
+  height: 8rem;
+  // height: 100%;
+  // width: 100%;
+  border-style: solid;
+  border-width: 5px;
+  border-bottom-color: rgb(71, 68, 68);
+  border-right-color: rgb(71, 68, 68);
+  border-top-color:rgb(165, 158, 158);
+  border-left-color: rgb(165, 158, 158);
+  box-shadow: 0 2rem 6rem rgba(0,0,0,.6);
+  // border-style: solid;
+  // border-bottom-width: 1px;
+  margin-bottom: 1.5rem;
+  // border-style: 1.5px solid inset;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  // &__text {
+  //   background-color: yellow;
+  // }
+
+
+
+  &__btn-box {
+
+    height: 60%;
+    width: 5rem;
+    /* background-color: orange; */
+    border-style: solid;
+    border-width: 5px;
+    border-top-color: rgb(196, 187, 187);
+    border-left-color: rgb(196, 187, 187);
+    border-bottom-color: rgb(71, 68, 68);
+    border-right-color: rgb(71, 68, 68);
+    flex: 0 0 5%;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    color: black;
+    height: 4rem;
+
+    display: inline-block;
+    background-color: yellow;
+    clip-path: circle(35% at 50% 50%);
+    overflow: hidden;
+    // mask-image: url(../../css/images/SVG/happy.svg);
+    // mask-size: contain;
+    // mask-repeat: no-repeat;
+    // mask-origin: view-box;
+  }
+
+
+  &__time-box {
+    background-color: black;
+    color: gray;
+    /* float: right; */
+    /* height: 5 rem; */
+    /* width: 10 rem; */
+    height: 75%;
+    
+    flex: 0 0 15%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline-color: gray;
+    outline-style: inset;
+  }
+
+}
+
+
+  .mines-box {
+    // color: black;
+    height: 75%;
+    width: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-top-color: rgb(196, 187, 187);
+    border-left-color: rgb(196, 187, 187);
+    border-bottom-color: rgb(71, 68, 68);
+    border-right-color: rgb(71, 68, 68);
+    flex: 0 0 15%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+    &__text {
+      // background-color: yellow;
+      letter-spacing: 2px;
+      height: 80%;
+      color: black;
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      margin-top: 1rem;
+    }
+
+    &__mines {
+      height: 70%;
+      width: 100%;
+      background-color: black;
+      color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   
+      font-family: "Orbitron",
+        sans-serif;
+      font-size: 3rem;
+      text-align: center;
+      outline-color: gray;
+      outline-style: inset;
+      
+      flex: 0 0 30%;
+    }
+
+  }
+

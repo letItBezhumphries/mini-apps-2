@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #777;
+  /* 30px divided by 10px = 3rem */
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: black;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+
+}
+
+.gameboard {
+  // background-color: #777;
+  background-color: black;
+  height: 140rem;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+  align-content: flex-start;
+
+  &__title {
+    background-color: green;
+    color: transparent;
+    background-clip: text;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__grid-box {
+    border-style: solid;
+    border-width: .10rem;
+    border-color: black;
+    height: 100rem;
+    // /* height: 100%; */
+    width: 120rem;
+    // display: grid;
+    font-weight: 400;
+    // margin-top: 8rem;
+    box-shadow: 0 2rem 6rem rgba(0,0,0,.4);
+    align-self: center;
+
+
+    display: flex;
+    justify-content: center;
+    
+  }
+}
+
+.title-text {
+  flex: 0 0 50%;
+  height: 80%;
+  font-weight: 600;
+  font-family: "Orbitron",
+  sans-serif;
+  font-size: 6rem;
+  letter-spacing: .5rem;
+  
+  display: flex;
+  justify-content: center;
+}
+
+

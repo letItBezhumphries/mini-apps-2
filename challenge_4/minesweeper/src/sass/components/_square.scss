@@ -1,0 +1,53 @@
+.square_value {
+  height: 100%;
+  width: 100%;
+  // height: 2.5rem;
+  // width: 2.5rem;
+  font-size: 100%;
+  color: red;
+  /* display: inline-grid; */
+  position: relative;
+  display: block;
+  grid-template-columns: repeat(10, 1fr);
+  // grid-auto-columns: minmax(2rem, auto);
+  // grid-template-columns: repeat(40, 1fr);
+  // grid-template-columns: repeat(40, minMax(2.5rem, 1fr));
+  grid-auto-rows: minMax(4rem, auto);
+  // grid-auto-rows: minMax(2rem, auto);
+  grid-gap: .1px;
+  border-style: solid;
+  border-width: 5px;
+  border-top-color: rgb(165, 158, 158);
+  border-left-color: rgb(165, 158, 158);
+  border-bottom-color: rgb(71, 68, 68);
+  border-right-color: rgb(71, 68, 68);
+  background-color: grey;
+  /* need to add select pseudo that will take away the border left and top bottom right 
+  colors when child is selected*/
+}
+
+.value_text--visible {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* display: inline-block; */
+  position: absolute;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: white;
+  background-size: cover;
+}
+
+.value_text--hidden {
+  display: none;
+  color: none;
+  background-color: grey;
+}
+
+.value_text__icon-flag {
+  display: inline-block;
+}
