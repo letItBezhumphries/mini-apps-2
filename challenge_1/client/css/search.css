@@ -1,0 +1,25 @@
+.ui,
+.segment {
+  position: relative; 
+  height: 50px;
+  display: block;
+  background-image: linear-gradient(to right bottom,
+        rgba(126, 213, 111, 0.80),
+        rgba(40, 180, 131, 0.815));  
+}
+
+.text_heading {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.search_input {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 200px;
+}
+
+
+
+ 

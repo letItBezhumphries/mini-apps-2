@@ -1,1 +1,8 @@
-public/app.js
+/public/dist/
+
+
+node_modules
+
+.eslintrc.json
+
+json-server.README.md

@@ -12,18 +12,19 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.(js|jsx)$/,
-      // include: SRC_DIR, 
-      exclude: /node_modules/,
-      use: ['babel-loader']
-    },
-    { 
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader']
-    }, 
-    {
-      test: /\.json$/,
-      use: ['json-loader']
-    }]
+        test: /\.(js|jsx)$/,
+        // include: SRC_DIR, 
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.json$/,
+        use: ['json-loader']
+      }
+    ]
   }
 }
